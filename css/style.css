@@ -263,7 +263,7 @@ footer .col_right {
     color: black;
     margin: 1rem 0;
 }
-.head_row p {
+.head_row > p {
     width: 60%;
     margin: auto;
     padding: 10px 0 20px 0;

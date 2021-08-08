@@ -19,7 +19,7 @@
 }
 /* TABLET */
 @media screen and (max-width: 768px) {
-    .head_row p {
+    .head_row > p {
         width: 100%;
     }
     .billed_monthly {

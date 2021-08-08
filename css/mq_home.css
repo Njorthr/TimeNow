@@ -1,33 +1,3 @@
-/* FOOTER */
-footer {
-    padding: 4rem 0;
-}
-.footer_logo {
-    width: 100%;
-}
-/* COL LEFT */
-footer .col_left {
-    display: flex;
-    flex-wrap: wrap;
-}
-footer .col_left ul {
-    padding-right: 80px;
-}
-footer .col_left h4 {
-    margin: 10px 0;
-    color: black;
-}
-/* COL RIGHT */
-footer .col_right {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-
-
-
-
 /* LAPTOPS LARGE TABLETS */
 @media screen and (max-width: 1280px) {
     .container {
