@@ -49,6 +49,13 @@ a {
 .col_right {
     flex-basis: 50%;
 }
+.col_pricing_header {
+    flex-basis: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
 /* Get Started Button */
 .start {
     border-radius:7px ;
@@ -79,8 +86,8 @@ a {
 }
 /*HEADER*/
 /* COL LEFT */
-header .col_right, header .col_left{
-    padding: 4rem 0 5rem 0;
+header .col_right, header .col_left, header .col_pricing_header{
+    padding: 4rem 0 2rem 0;
 }
 header .col_left {
     display: flex;
@@ -212,6 +219,7 @@ footer .col_right {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: white;
 }
 /* SUBSCRIPTION */
 .subscribe h4{
@@ -241,126 +249,91 @@ footer .col_right {
     border: 1px solid gray;
     border-radius: 0.5rem;
 }
-/* LAPTOPS LARGE TABLETS */
-@media screen and (max-width: 1280px) {
-    .container {
-        width: 95%;
-    }
-    h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-        line-height: 2rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .mockup img {
-        padding: 25px;
-    }
+
+
+/* PRICING PAGE */
+.head_row {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
-/* TABLETS */
-@media screen and (max-width: 768px){
-    /*GLOBAL*/
-    h1 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-    }
-    p {
-        font-size: 0.8rem;
-    }
-    /* HEADER */
-    .header_text {
-        margin-top: 10%;
-    }
-    .col_right .start {
-        margin-left: auto;
-        margin-right: 5%;
-    }
-    .demo {
-        padding-top: 25px;
-    }
-    /* SECTION 1 */
-    #sec_1 .container {
-        flex-direction: column;
-    }
-    #sec_1 .col_left {
-        display: flex;
-        padding: 0;
-    }
-    #sec_1 .col_right {
-        padding: 0;
-    }
-    /* SECTION 2 */
-    .text_container {
-        width: 100%;
-    }
-    #sec_2 .container {
-        flex-direction: column;
-    }
-    #sec_2 .col_left {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-    #sec_2 .col_right {
-        padding: 0;
-    }
-    /* FOOTER */
-    footer .container {
-        flex-direction: column;
-    }
-    footer .col_right {
-        justify-content: flex-start;
-        margin-top: 30px; 
-    }
+.head_row h1 {
+    color: black;
+    margin: 1rem 0;
 }
-/* SMART PHONES */
-@media screen and (max-width: 532px) {
-    .container{
-        flex-direction: column;
-    }
-    header .col_left {
-        padding-top: 20px;
-    }
-    header .col_right {
-        padding:  0;
-    }
-    header .col_right .start {
-        display: none;
-    }
-    .header_text {
-        padding-right: 0;
-    }
-    .demo {
-        padding-top: auto;
-        padding-left: 5%;
-    }
-    .mockup img {
-        width: 100%;
-    }
-    #sec_1 .col_left {
-        flex-direction: column;
-    }
-    #sec_2 {
-        padding: 40px 0;
-    }
-    .subscribe input[type="button"], .subscribe input[type="email"]  {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    /*HAMBURGER MENU */
-    .navlist {
-        display: none;
-    }
-    .brandlogo {
-        display: inline-block;
-        margin-right: auto;
-    }
+.head_row p {
+    width: 60%;
+    margin: auto;
+    padding: 10px 0 20px 0;
 }
+.plan_container {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
     
+}
+.plan {
+    flex-basis: 25%;
+    text-align: start;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 7px;
+    padding: 30px;
+    height: fit-content;
+}
+.plan h2 {
+    margin: 0px;
+}
+.plan ul {
+   /* list-style-image: url(../images/Checkmark.svg); */
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+.plan ul li:last-child {
+    list-style-image: none;
+}
+.plan ul li {
+    padding: 5px 0;
+    color: rgb(102, 102, 102);
+    margin-bottom: auto;
+    display: flex;
+}
+.plan ul li img {
+    margin-right: 10px;
+}
+hr {
+   display: none;
+}
+.plan ul .start {
+    width: 100%;
+    margin:  20px 0 5px 0;
+    
+}
+.faint {
+    color: gray;
+    font-size: 1.5rem;
+}
+footer .pricing_col_left {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .pricing_col_left ul {
+    padding-right: 80px;
+}
+footer .pricing_col_left h4 {
+    margin: 10px 0;
+    color: black;
+}
+footer .pricing_col_right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+}
+footer .container {
+    justify-content: space-between;
+}

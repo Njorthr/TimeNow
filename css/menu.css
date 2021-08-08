@@ -4,7 +4,10 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
 .menu-wrap {
     box-sizing: border-box;
     display: flex;

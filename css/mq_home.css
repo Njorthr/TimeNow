@@ -1,0 +1,152 @@
+/* FOOTER */
+footer {
+    padding: 4rem 0;
+}
+.footer_logo {
+    width: 100%;
+}
+/* COL LEFT */
+footer .col_left {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .col_left ul {
+    padding-right: 80px;
+}
+footer .col_left h4 {
+    margin: 10px 0;
+    color: black;
+}
+/* COL RIGHT */
+footer .col_right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+
+/* LAPTOPS LARGE TABLETS */
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .mockup img {
+        padding: 25px;
+    }
+}
+/* TABLETS */
+@media screen and (max-width: 768px){
+    /*GLOBAL*/
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    /* HEADER */
+    .header_text {
+        margin-top: 10%;
+    }
+    .col_right .start {
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    .demo {
+        padding-top: 25px;
+    }
+    /* SECTION 1 */
+    #sec_1 .container {
+        flex-direction: column;
+    }
+    #sec_1 .col_left {
+        display: flex;
+        padding: 0;
+    }
+    #sec_1 .col_right {
+        padding: 0;
+    }
+    /* SECTION 2 */
+    .text_container {
+        width: 100%;
+    }
+    #sec_2 .container {
+        flex-direction: column;
+    }
+    #sec_2 .col_left {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #sec_2 .col_right {
+        padding: 0;
+    }
+    /* FOOTER */
+    footer .container {
+        flex-direction: column;
+    }
+    footer .col_right {
+        justify-content: flex-start;
+        margin-top: 30px; 
+    }
+}
+/* SMART PHONES */
+@media screen and (max-width: 532px) {
+    .container{
+        flex-direction: column;
+    }
+    header .col_left, header .col_pricing_header {
+        padding-top: 20px;
+    }
+    header .col_right {
+        padding:  0;
+    }
+    header .col_right .start {
+        display: none;
+    }
+    .header_text {
+        padding-right: 0;
+    }
+    .demo {
+        padding-top: auto;
+        padding-left: 5%;
+    }
+    .mockup img {
+        width: 100%;
+    }
+    #sec_1 .col_left {
+        flex-direction: column;
+    }
+    #sec_2 {
+        padding: 40px 0;
+    }
+    .subscribe input[type="button"], .subscribe input[type="email"]  {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /*HAMBURGER MENU */
+    .navlist, .col_pricing_header .nav {
+        display: none;
+    }
+    .brandlogo {
+        display: inline-block;
+        margin-right: auto;
+    }
+}

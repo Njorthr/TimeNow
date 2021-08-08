@@ -1,0 +1,68 @@
+@media screen and (max-width: 1280px) {
+    .billed_monthly {
+        left: 35%;
+    }
+    .billed_yearly {
+        left: 55%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .billed_monthly {
+        left: 30%;
+    }
+    .billed_yearly {
+        left: 55%;
+    }
+    .container {
+        width: 95%;
+    }
+}
+/* TABLET */
+@media screen and (max-width: 768px) {
+    .head_row p {
+        width: 100%;
+    }
+    .billed_monthly {
+        left: 20%;
+    }
+    .billed_yearly {
+        left: 60%;
+    }
+    .button_wrapper .toggler_plan {
+        left: 43%;
+        width: 80px;
+    }
+    .plan {
+        height: auto;
+    }
+    .plan_3 {
+        flex-basis: 100%;
+        margin-top: 50px;
+    }
+    .plan_1, .plan_2 {
+        box-sizing: border-box;
+        flex-basis: 45%;   
+    }
+    footer .pricing_col_right {
+        justify-content: flex-start;
+        margin-top: 30px; 
+    }
+}
+@media screen and (max-width:532px){
+    .plan_container {
+        flex-direction: column;
+    }
+    .plan_1 {
+        margin-bottom: 50px;
+    }
+    .billed_monthly {
+        left: 10%;
+    }
+    .billed_yearly {
+        left: 60%;
+    }
+    .button_wrapper .toggler_plan {
+        left: 37%;
+        width: 90px;
+    }
+}
