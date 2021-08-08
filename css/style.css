@@ -1,0 +1,355 @@
+:root {
+    --darkblue: rgb(0, 0, 97);
+    --gray: rgb(100, 100, 100);
+}
+/*GLOBAL*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8rem;
+}
+h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+h1, h2, h3, h4 {
+    color: var(--darkblue);
+}
+p,a {
+    font-size: 1.1rem;
+    color: rgb(100, 100, 100);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.blue {
+    color: blue;
+}
+.container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.col_left {
+    flex-basis: 50%;
+}
+.col_right {
+    flex-basis: 50%;
+}
+/* Get Started Button */
+.start {
+    border-radius:7px ;
+    background-color: var(--darkblue);
+    box-sizing: border-box;
+    width: 190px;
+    height: auto;
+    text-align: center;
+    transition: 0.4s;
+    color: white;
+}
+.start a {
+    color: white;
+    display: block;
+    padding: 20px 0;
+    font-size: 1rem;
+    
+}
+.start:hover {
+    background-color: rgb(0, 0, 197);
+}
+.text_container {
+    width: 80%;
+    height: auto;
+}
+/*HEADER*/
+/* COL LEFT */
+header .col_right, header .col_left{
+    padding: 4rem 0 5rem 0;
+}
+header .col_left {
+    display: flex;
+    flex-direction: column;
+}
+.nav ul {
+    display: flex;
+}
+.nav ul li{
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.header_text {
+    margin: auto 0;
+    box-sizing: border-box;
+    padding-right: 25%;
+}
+.header_text ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.demo {
+    padding: 0 25px;
+}
+.learn {
+    text-decoration: underline;
+}
+/* COL RIGHT */
+header .col_right {
+    background-color: rgb(122, 188, 255);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.mockup {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mockup img {
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+}
+.col_right .start {
+    margin-left: auto;
+    margin-right: 20%;
+}
+/*SECTION 1*/
+#sec_1 {
+    margin: 50px 0;
+}
+/* COL LEFT */
+#sec_1 .col_left {
+    padding: 0 5% 0 1%;
+    box-sizing: border-box;
+}
+#sec_1 .col_left ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sec_1 .col_left ul li {
+    padding-right: 10px;
+    padding-top: 10px;
+} 
+#sec_1 .col_left ul li img {
+    width: 60px;
+    height: 60px;
+}
+/* COL RIGHT */
+#sec_1 .col_right {
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+/* SECTION 2 */
+#sec_2 {
+    background-color: rgb(232, 243, 255);
+    padding: 4rem 0;
+}
+#sec_2 h2 {
+    color: rgb(85, 85, 85);
+}
+/* COL LEFT */
+#sec_2 .col_left {
+    padding: 0 5% 0 1%;
+    box-sizing: border-box;
+}
+/* COL RIGHT */
+#sec_2 .col_right {
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.link_arrow {
+    display: flex;
+}
+.arrow {
+    align-self: center;
+    width: 40px;
+    height: 20px;
+    transform: translateX(-8px);
+    transition: 0.4s;
+}
+.link_arrow:hover .arrow {
+    transform: translateX(8px);
+}
+/* FOOTER */
+footer {
+    padding: 4rem 0;
+}
+.footer_logo {
+    width: 100%;
+}
+/* COL LEFT */
+footer .col_left {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .col_left ul {
+    padding-right: 80px;
+}
+footer .col_left h4 {
+    margin: 10px 0;
+    color: black;
+}
+/* COL RIGHT */
+footer .col_right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* SUBSCRIPTION */
+.subscribe h4{
+    color: black;
+    margin: 0;
+}
+.subscribe input[type="email"] {
+    border: none;
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+.subscribe input[type="button"] {
+    border: none;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.4s;
+}
+.subscribe input[type="button"]:hover {
+    background-color: rgb(0, 0, 185);
+}
+.sub_comp_1 {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+}
+/* LAPTOPS LARGE TABLETS */
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .mockup img {
+        padding: 25px;
+    }
+}
+/* TABLETS */
+@media screen and (max-width: 768px){
+    /*GLOBAL*/
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    /* HEADER */
+    .header_text {
+        margin-top: 10%;
+    }
+    .col_right .start {
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    .demo {
+        padding-top: 25px;
+    }
+    /* SECTION 1 */
+    #sec_1 .container {
+        flex-direction: column;
+    }
+    #sec_1 .col_left {
+        display: flex;
+        padding: 0;
+    }
+    #sec_1 .col_right {
+        padding: 0;
+    }
+    /* SECTION 2 */
+    .text_container {
+        width: 100%;
+    }
+    #sec_2 .container {
+        flex-direction: column;
+    }
+    #sec_2 .col_left {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    #sec_2 .col_right {
+        padding: 0;
+    }
+    /* FOOTER */
+    footer .container {
+        flex-direction: column;
+    }
+    footer .col_right {
+        justify-content: flex-start;
+        margin-top: 30px; 
+    }
+}
+/* SMART PHONES */
+@media screen and (max-width: 532px) {
+    .container{
+        flex-direction: column;
+    }
+    header .col_left {
+        padding-top: 20px;
+    }
+    header .col_right {
+        padding:  0;
+    }
+    header .col_right .start {
+        display: none;
+    }
+    .header_text {
+        padding-right: 0;
+    }
+    .demo {
+        padding-top: auto;
+        padding-left: 5%;
+    }
+    .mockup img {
+        width: 100%;
+    }
+    #sec_1 .col_left {
+        flex-direction: column;
+    }
+    #sec_2 {
+        padding: 40px 0;
+    }
+    .subscribe input[type="button"], .subscribe input[type="email"]  {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+    
