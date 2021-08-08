@@ -74,6 +74,9 @@ a {
     width: 80%;
     height: auto;
 }
+.menu-wrap, .brandlogo {
+    display: none;
+}
 /*HEADER*/
 /* COL LEFT */
 header .col_right, header .col_left{
@@ -350,6 +353,14 @@ footer .col_right {
     .subscribe input[type="button"], .subscribe input[type="email"]  {
         width: 100%;
         box-sizing: border-box;
+    }
+    /*HAMBURGER MENU */
+    .navlist {
+        display: none;
+    }
+    .brandlogo {
+        display: inline-block;
+        margin-right: auto;
     }
 }
     
