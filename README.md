@@ -1,7 +1,7 @@
 # TimeNow 
 
-TimeNow is a codewell.cc challenge.  /
-Consists of 2 pages: Landing and Pricing Page. /
+TimeNow is a codewell.cc challenge.  /n
+Consists of 2 pages: Landing and Pricing Page. /n
 Built with HTML/CSS only
 <hr>
 
