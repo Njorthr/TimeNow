@@ -1,6 +1,6 @@
 # TimeNow 
 
-TimeNow is a codewell.cc challenge.  
+TimeNow is a https://www.codewell.cc/challenges/timenow-landing-page--608d9a7d747bad001532bd70 challenge.  
 Consists of 2 pages: Landing and Pricing Page.  
 Built with HTML/CSS only
 <hr>
